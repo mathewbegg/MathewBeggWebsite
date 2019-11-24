@@ -3,8 +3,8 @@
         <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #mainMenu="matMenu">
-        <a mat-menu-item href="projects">Projects</a>
+        <div *ngFor="let page of pages" mat-menu-item (click)="viewComponent(page.component)">{{ page.name }}</div>
     </mat-menu>
     <h1>Mathew Begg</h1>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<ng-container #pageContent></ng-container>
