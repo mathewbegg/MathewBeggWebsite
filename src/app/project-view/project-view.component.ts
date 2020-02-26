@@ -4,24 +4,21 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 @Component({
   selector: 'app-project-view',
   templateUrl: './project-view.component.html',
-  styleUrls: ['./project-view.component.scss']
+  styleUrls: ['./project-view.component.scss'],
 })
 export class ProjectViewComponent implements OnInit {
-
   links = [
     {
-      name: 'Basketball',
-      address: 'http://basketball.mathewbegg.com'
+      name: "Mathew's Teas",
+      address: 'http://tea.mathewbegg.com',
     },
     {
       name: 'Love Letter',
-      address: 'http://loveletter.mathewbegg.com'
-    }
+      address: 'http://loveletter.mathewbegg.com',
+    },
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
