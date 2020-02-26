@@ -1,10 +1,16 @@
 <mat-toolbar>
-    <button mat-icon-button [matMenuTriggerFor]="mainMenu">
-        <mat-icon>more_vert</mat-icon>
-    </button>
-    <mat-menu #mainMenu="matMenu">
-        <div *ngFor="let page of pages" mat-menu-item (click)="viewComponent(page.component)">{{ page.name }}</div>
-    </mat-menu>
-    <h1>Mathew Begg</h1>
+  <button mat-icon-button [matMenuTriggerFor]="mainMenu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #mainMenu="matMenu">
+    <div
+      *ngFor="let page of pages"
+      mat-menu-item
+      (click)="viewComponent(page.component)"
+    >
+      {{ page.name }}
+    </div>
+  </mat-menu>
+  <h1>Mathew Begg</h1>
 </mat-toolbar>
 <ng-container #pageContent></ng-container>
