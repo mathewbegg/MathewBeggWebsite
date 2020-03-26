@@ -7,12 +7,15 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { MatToolbarModule, MatMenuModule, MatButtonModule, MatIconModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProjectViewComponent } from './project-view/project-view.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeViewComponent } from './home-view/home-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainLayoutComponent,
-    ProjectViewComponent
+    ProjectViewComponent,
+    HomeViewComponent
   ],
   entryComponents: [
     ProjectViewComponent
@@ -24,7 +27,8 @@ import { ProjectViewComponent } from './project-view/project-view.component';
     MatMenuModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatIconModule
+    MatIconModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
