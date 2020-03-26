@@ -3,14 +3,10 @@
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #mainMenu="matMenu">
-    <div
-      *ngFor="let page of pages"
-      mat-menu-item
-      (click)="viewComponent(page.component)"
-    >
+    <div *ngFor="let page of pages" mat-menu-item routerLink="{{ page.path }}">
       {{ page.name }}
     </div>
   </mat-menu>
   <h1>Mathew Begg</h1>
 </mat-toolbar>
-<ng-container #pageContent></ng-container>
+<router-outlet></router-outlet>
