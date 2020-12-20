@@ -1,26 +1,20 @@
-import {
-  Component,
-  OnInit,
-  ViewChild,
-  ViewContainerRef,
-  ComponentFactoryResolver,
-  ComponentFactory,
-} from '@angular/core';
-import { MatMenu } from '@angular/material';
-import { ProjectViewComponent } from '../project-view/project-view.component';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-main-layout',
-  templateUrl: './main-layout.component.html',
-  styleUrls: ['./main-layout.component.scss'],
+  selector: "app-main-layout",
+  templateUrl: "./main-layout.component.html",
+  styleUrls: ["./main-layout.component.scss"],
 })
 export class MainLayoutComponent implements OnInit {
   pages = [
-    { name: 'Home', path: '' },
-    { name: 'Projects', path: '/projects' },
+    { name: "About Me", path: "/aboutMe" },
+    { name: "Resumé", path: "/resume" },
+    { name: "Projects", path: "/projects" },
   ];
 
-  constructor(private resolver: ComponentFactoryResolver) {}
+  activePage = this.pages[0];
+
+  constructor() {}
 
   ngOnInit() {}
 }
