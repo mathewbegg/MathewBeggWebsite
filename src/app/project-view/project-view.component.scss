@@ -1,3 +1,24 @@
-.link-button {
-    width: 10vw;
+@import '../../theme.scss';
+
+:host {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  height: 250px;
+  width: 250px;
+  margin: 15px;
+  background-color: mat-color($mbw-primary, lighter);
+  cursor: pointer;
+  border: 2px solid transparent;
+  &:hover {
+    border: 2px solid mat-color($mbw-accent, lighter);
+  }
 }
