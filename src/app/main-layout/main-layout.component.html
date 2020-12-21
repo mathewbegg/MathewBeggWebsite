@@ -5,11 +5,13 @@
   <a
     mat-tab-link
     *ngFor="let page of pages"
-    (click)="activePage = page.path"
-    [active]="activePage == page.path"
+    (click)="activePage = page"
+    [active]="activePage == page"
     [routerLink]="page.path"
   >
     {{ page.name }}
   </a>
 </nav>
-<router-outlet></router-outlet>
+<div class="content-area">
+  <router-outlet></router-outlet>
+</div>
