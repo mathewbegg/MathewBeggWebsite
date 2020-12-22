@@ -20,9 +20,16 @@
       vital.
     </p>
     <p>
-      I like to problem solve. In my free time I enjoy sports (volleyball,
-      basketball, skiing), board games and video games.
+      I enjoy problem solving. In my free time I like to play sports
+      (volleyball, basketball, skiing), board games and video games.
     </p>
   </div>
 </div>
-<img class="landscape" src="../../assets/ski-picture.png" />
+<div class="content-row">
+  <img
+    [@changePicture]="displayPicture ? 'display' : 'hide'"
+    class="gallery-picture"
+    src="{{ picturePath + pictures[currentPicture] }}"
+  />
+</div>
+<div></div>

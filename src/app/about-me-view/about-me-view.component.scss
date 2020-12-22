@@ -9,22 +9,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 80vw;
 }
 
 .portrait {
   max-height: 400px;
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
   width: auto;
 }
 
-.landscape {
-  max-width: 800px;
+.gallery-picture {
+  max-height: 400px;
+  max-width: 100%;
   height: auto;
   width: auto;
 }
 
 .content-section {
   margin: 25px;
-  max-width: 400px;
+  max-width: 80vw;
 }
