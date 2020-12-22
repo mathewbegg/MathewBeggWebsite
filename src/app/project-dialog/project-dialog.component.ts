@@ -1,10 +1,11 @@
-import { Component, Inject, OnInit } from '@angular/core'
-import { MAT_DIALOG_DATA } from '@angular/material'
+import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material';
 
 export interface ProjectData {
-  name: string
-  address: string
-  description: string[]
+  name: string;
+  address: string;
+  description: string[];
+  iconURL: string;
 }
 
 @Component({

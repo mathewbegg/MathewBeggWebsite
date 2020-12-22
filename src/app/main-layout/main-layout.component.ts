@@ -20,7 +20,7 @@ export class MainLayoutComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe((event: any) => {
       this.activePage =
-        this.pages.filter((page) => page.path === event.url)[0] ||
+        this.pages.filter((page) => page.path === event.urlAfterRedirects)[0] ||
         this.activePage;
     });
   }

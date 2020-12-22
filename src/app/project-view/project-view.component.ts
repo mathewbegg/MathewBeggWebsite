@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core'
-import { MatDialog } from '@angular/material'
+import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
 import {
   ProjectData,
   ProjectDialogComponent,
-} from '../project-dialog/project-dialog.component'
+} from '../project-dialog/project-dialog.component';
 
 @Component({
   selector: 'app-project-view',
@@ -19,6 +19,7 @@ export class ProjectViewComponent implements OnInit {
         "I created a browser adaptation of the social card game 'Superfight' so I could play it with friends virtually during the COVID-19 lockdown.",
         'The client-side is an angular app hosted from an AWS S3 bucket, it connects via socket.io to a Node.js server hosted on an AWS EC2 instance.',
       ],
+      iconURL: '../../assets/superfight-icon.png',
     },
     {
       name: 'Tea Menu',
@@ -27,6 +28,7 @@ export class ProjectViewComponent implements OnInit {
         'The first app I created with a backend: a simple page showcasing a menu of teas.',
         'It is an angular app hosted from an AWS S3 bucket that fetches data from a serverless AWS backend (API Gateway -> Lambda -> DynamoDB)',
       ],
+      iconURL: '../../assets/tea-icon.png',
     },
     {
       name: "'Love Letter' Game Assistant",
@@ -35,8 +37,9 @@ export class ProjectViewComponent implements OnInit {
         'The first web app I created: a basic helper app for the tabletop game \'Love Letter\', in which one must keep track of "dead" and "alive" characters.',
         'It is a simple angular app hosted from an AWS S3 bucket.',
       ],
+      iconURL: '../../assets/loveletter-icon.png',
     },
-  ]
+  ];
 
   constructor(public dialog: MatDialog) {}
 
@@ -46,6 +49,6 @@ export class ProjectViewComponent implements OnInit {
     const dialogRef = this.dialog.open(ProjectDialogComponent, {
       data: projectData,
       maxWidth: '25vw',
-    })
+    });
   }
 }
