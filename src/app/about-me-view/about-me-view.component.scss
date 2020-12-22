@@ -1,11 +1,30 @@
 :host {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
-img {
+.portrait {
   max-height: 400px;
   max-width: 400px;
   height: auto;
   width: auto;
+}
+
+.landscape {
+  max-width: 800px;
+  height: auto;
+  width: auto;
+}
+
+.content-section {
+  margin: 25px;
+  max-width: 400px;
 }
