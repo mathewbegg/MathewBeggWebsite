@@ -1,0 +1,12 @@
+<h2>{{ data.name }}</h2>
+<mat-dialog-content>
+  <p *ngFor="let paragraph of data.description">
+    {{ paragraph }}
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <a mat-button mat-dialog-close>Close</a>
+  <a mat-flat-button color="primary" href="{{ data.address }}" target="_blank"
+    >Show Me</a
+  >
+</mat-dialog-actions>

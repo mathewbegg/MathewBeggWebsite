@@ -1,1 +1,8 @@
-<div *ngFor="let project of projects" class="project-tile" matTooltip="Click for more Info">{{project.name}}</div>
+<div
+  *ngFor="let project of projects"
+  class="project-tile"
+  matTooltip="Click for more Info"
+  (click)="openDialog(project)"
+>
+  {{ project.name }}
+</div>
