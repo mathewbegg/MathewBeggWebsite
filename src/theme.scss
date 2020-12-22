@@ -9,8 +9,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$mbw-primary: mat-palette($mat-blue);
-$mbw-accent: mat-palette($mat-pink, A200, A100, A400);
+$mbw-primary: mat-palette($mat-blue, 500, 100, 900);
+$mbw-accent: mat-palette($mat-yellow, 500, 100, 700);
 
 // The warn palette is optional (defaults to red).
 $mbw-warn: mat-palette($mat-red);
