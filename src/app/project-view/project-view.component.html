@@ -2,6 +2,7 @@
   *ngFor="let project of projects"
   class="project-tile"
   matTooltip="Click for more Info"
+  matRipple
   (click)="openDialog(project)"
 >
   {{ project.name }}
