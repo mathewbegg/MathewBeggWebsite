@@ -48,7 +48,7 @@ export class ProjectViewComponent implements OnInit {
   openDialog(projectData: ProjectData) {
     const dialogRef = this.dialog.open(ProjectDialogComponent, {
       data: projectData,
-      maxWidth: '25vw',
+      maxWidth: 'max(min(400px,90vw),25vw)',
     });
   }
 }
