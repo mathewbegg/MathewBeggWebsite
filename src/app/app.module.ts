@@ -14,7 +14,6 @@ import {
   MatDialogModule,
   MatRippleModule,
 } from '@angular/material';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProjectViewComponent } from './project-view/project-view.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutMeViewComponent } from './about-me-view/about-me-view.component';
@@ -37,7 +36,6 @@ import { ProjectDialogComponent } from './project-dialog/project-dialog.componen
     MatToolbarModule,
     MatMenuModule,
     MatButtonModule,
-    FlexLayoutModule,
     MatIconModule,
     AppRoutingModule,
     MatTabsModule,
