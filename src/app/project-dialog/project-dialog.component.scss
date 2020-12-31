@@ -1,0 +1,12 @@
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    height: 48px;
+    width: 48px;
+  }
+  h2 {
+    text-align: center;
+  }
+}

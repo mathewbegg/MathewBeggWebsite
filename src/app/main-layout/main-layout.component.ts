@@ -1,13 +1,5 @@
-import {
-  Component,
-  OnInit,
-  ViewChild,
-  ViewContainerRef,
-  ComponentFactoryResolver,
-  ComponentFactory,
-} from '@angular/core';
-import { MatMenu } from '@angular/material';
-import { ProjectViewComponent } from '../project-view/project-view.component';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-layout',
@@ -16,11 +8,39 @@ import { ProjectViewComponent } from '../project-view/project-view.component';
 })
 export class MainLayoutComponent implements OnInit {
   pages = [
-    { name: 'Home', path: '' },
+    { name: 'About Me', path: '/aboutMe' },
+    { name: 'Resumé', path: '/resume' },
     { name: 'Projects', path: '/projects' },
   ];
 
-  constructor(private resolver: ComponentFactoryResolver) {}
+  activePage;
+  logoDirectoryPath = '../../assets/tech-logos/';
+  logos = [
+    'aws-logo.png',
+    'angular-logo.png',
+    'ngrx-logo.png',
+    'html5-logo.png',
+    'css3-logo.png',
+    'sass-logo.png',
+    'nodejs-logo.png',
+    'typescript-logo.png',
+    'java-logo.png',
+    'c-logo.png',
+    'mongodb-logo.png',
+    'git-logo.png',
+    'gocd-logo.png',
+    'redux-logo.png',
+  ].map((logo) => {
+    return { path: this.logoDirectoryPath + logo };
+  });
 
-  ngOnInit() {}
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.router.events.subscribe((event: any) => {
+      this.activePage =
+        this.pages.filter((page) => page.path === event.urlAfterRedirects)[0] ||
+        this.activePage;
+    });
+  }
 }

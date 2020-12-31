@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 80vw;
+}
+
+.portrait {
+  max-height: 400px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.gallery-picture {
+  max-height: 400px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.content-section {
+  margin: auto 25px auto 25px;
+  max-width: 400px;
+}
