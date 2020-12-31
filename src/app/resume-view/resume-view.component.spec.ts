@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ResumeViewComponent } from './resume-view.component';
 
@@ -6,7 +6,7 @@ describe('ResumeViewComponent', () => {
   let component: ResumeViewComponent;
   let fixture: ComponentFixture<ResumeViewComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ResumeViewComponent ]
     })
