@@ -13,16 +13,10 @@
   </a>
 </nav>
 <div class="content-area">
-  <router-outlet></router-outlet>
-  <!-- <carousel loop="true" freeScroll="true" autoplay="true" autoplayInterval="0"> -->
-  <carousel
-    [loop]="true"
-    [images]="logos"
-    [autoplay]="true"
-    [autoplayInterval]="0"
-    [arrows]="false"
-    [transitionDuration]="8000"
-    [cellsToScroll]="logos.length"
-  >
-  </carousel>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  <div class="logo-container">
+    <img *ngFor="let logo of logos" src="{{ logo.path }}" />
+  </div>
 </div>
