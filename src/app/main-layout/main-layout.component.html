@@ -1,22 +1,24 @@
-<mat-toolbar color="primary">
-  <h1>Mathew Begg</h1>
-</mat-toolbar>
-<nav mat-tab-nav-bar mat-stretch-tabs>
-  <a
-    mat-tab-link
-    *ngFor="let page of pages"
-    (click)="activePage = page"
-    [active]="activePage == page"
-    [routerLink]="page.path"
-  >
-    {{ page.name }}
-  </a>
-</nav>
+<div>
+  <mat-toolbar color="primary">
+    <h1>Mathew Begg</h1>
+  </mat-toolbar>
+  <nav mat-tab-nav-bar mat-stretch-tabs>
+    <a
+      mat-tab-link
+      *ngFor="let page of pages"
+      (click)="activePage = page"
+      [active]="activePage == page"
+      [routerLink]="page.path"
+    >
+      {{ page.name }}
+    </a>
+  </nav>
+</div>
 <div class="content-area">
   <div>
     <router-outlet></router-outlet>
   </div>
-  <div class="logo-container">
-    <img *ngFor="let logo of logos" src="{{ logo.path }}" />
-  </div>
+</div>
+<div class="logo-container">
+  <img *ngFor="let logo of logos" src="{{ logo.path }}" />
 </div>
