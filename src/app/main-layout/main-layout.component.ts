@@ -14,6 +14,25 @@ export class MainLayoutComponent implements OnInit {
   ];
 
   activePage;
+  logoDirectoryPath = '../../assets/tech-logos/';
+  logos = [
+    'aws-logo.png',
+    'angular-logo.png',
+    'ngrx-logo.png',
+    'html5-logo.png',
+    'css3-logo.png',
+    'sass-logo.png',
+    'nodejs-logo.png',
+    'typescript-logo.png',
+    'java-logo.png',
+    'c-logo.png',
+    'mongodb-logo.png',
+    'git-logo.png',
+    'gocd-logo.png',
+    'redux-logo.png',
+  ].map((logo) => {
+    return { path: this.logoDirectoryPath + logo };
+  });
 
   constructor(private router: Router) {}
 

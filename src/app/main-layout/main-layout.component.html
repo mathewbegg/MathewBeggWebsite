@@ -14,20 +14,15 @@
 </nav>
 <div class="content-area">
   <router-outlet></router-outlet>
-  <div class="logo-container">
-    <img src="../../assets/tech-logos/aws-logo.png" />
-    <img src="../../assets/tech-logos/angular-logo.png" />
-    <img src="../../assets/tech-logos/ngrx-logo.png" />
-    <img src="../../assets/tech-logos/html5-logo.png" />
-    <img src="../../assets/tech-logos/css3-logo.png" />
-    <img src="../../assets/tech-logos/sass-logo.png" />
-    <img src="../../assets/tech-logos/nodejs-logo.png" />
-    <img src="../../assets/tech-logos/typescript-logo.png" />
-    <img src="../../assets/tech-logos/java-logo.png" />
-    <img src="../../assets/tech-logos/c-logo.png" />
-    <img src="../../assets/tech-logos/mongodb-logo.png" />
-    <img src="../../assets/tech-logos/git-logo.png" />
-    <img src="../../assets/tech-logos/gocd-logo.png" />
-    <img src="../../assets/tech-logos/redux-logo.png" />
-  </div>
+  <!-- <carousel loop="true" freeScroll="true" autoplay="true" autoplayInterval="0"> -->
+  <carousel
+    [loop]="true"
+    [images]="logos"
+    [autoplay]="true"
+    [autoplayInterval]="0"
+    [arrows]="false"
+    [transitionDuration]="8000"
+    [cellsToScroll]="logos.length"
+  >
+  </carousel>
 </div>
