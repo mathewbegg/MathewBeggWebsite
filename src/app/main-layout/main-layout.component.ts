@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 @Component({
@@ -34,7 +36,20 @@ export class MainLayoutComponent implements OnInit {
     return { path: this.logoDirectoryPath + logo };
   });
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    iconRegistry: MatIconRegistry,
+    sanitizer: DomSanitizer
+  ) {
+    iconRegistry.addSvgIcon(
+      'linkedIn',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/linkedin-icon.svg')
+    );
+    iconRegistry.addSvgIcon(
+      'github',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/github-icon.svg')
+    );
+  }
 
   ngOnInit() {
     this.router.events.subscribe((event: any) => {

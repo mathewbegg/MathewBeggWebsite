@@ -19,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AboutMeViewComponent } from './about-me-view/about-me-view.component';
 import { ResumeViewComponent } from './resume-view/resume-view.component';
 import { ProjectDialogComponent } from './project-dialog/project-dialog.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ProjectDialogComponent } from './project-dialog/project-dialog.componen
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatToolbarModule,
     MatMenuModule,
     MatButtonModule,

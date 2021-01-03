@@ -5,6 +5,17 @@
   justify-content: space-between;
 }
 
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-icons {
+  mat-icon {
+    transform: scale(1.25);
+  }
+}
+
 .content-area {
   padding: 40px 10vw 40px 10vw;
   display: flex;

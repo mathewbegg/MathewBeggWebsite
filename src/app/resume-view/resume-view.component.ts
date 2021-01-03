@@ -9,8 +9,4 @@ export class ResumeViewComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
-  navToResume() {
-    location.href = '../../assets/resume-public.pdf';
-  }
 }
