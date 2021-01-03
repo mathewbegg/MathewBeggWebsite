@@ -10,8 +10,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatRippleModule } from '@angular/material/core';
-
-import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
@@ -43,7 +42,7 @@ import { ProjectDialogComponent } from './project-dialog/project-dialog.componen
     MatTooltipModule,
     MatDialogModule,
     MatRippleModule,
-    IvyCarouselModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
