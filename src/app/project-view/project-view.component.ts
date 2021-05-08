@@ -22,6 +22,17 @@ export class ProjectViewComponent implements OnInit {
       iconURL: '../../assets/superfight-icon.png',
     },
     {
+      name: 'Smart Fridge Add-on',
+      address: 'https://youtu.be/eiwXDf0PKaU',
+      description: [
+        'For my engineering Capstone Project, I along with 3 others created an add-on product to turn any fridge into a smart fridge.',
+        "A device would capture images of a fridge's interior, and upload them to a cloud back end, which would use image classification to identify the items in the fridge.",
+        'A user would then be able to view the image as well as the list of items on a web application or by using Amazon Alexa voice assistant.',
+        'The project is based on AWS. The Clarifai service was used for image classification.',
+      ],
+      iconURL: '../../assets/fridge-icon.png',
+    },
+    {
       name: 'Martial Art School Student Database',
       address: 'https://tkddb-demo.mathewbegg.com',
       description: [
